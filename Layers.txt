@@ -1,0 +1,27 @@
+OS (Windows)
+
+    ↓  exposes process + window + input events
+    
+collector.py  (psutil · pywin32 · pynput)
+
+    ↓  returns app name, title, idle state
+
+main.py  (polling loop · session stitching)
+
+    ↓  completed session → app + title + start + end
+
+classifier.py  (YAML rules → Claude API fallback)
+
+    ↓  adds category to session
+
+database.py  (SQLite · single file · local)
+
+    ↓  stores raw sessions
+
+processor.py  (Pandas · SQL aggregation)
+
+    ↓  produces summaries + insights
+
+dashboard/app.py          exports/csv + pdf
+(Streamlit · Plotly)      (reportlab · csv)
+

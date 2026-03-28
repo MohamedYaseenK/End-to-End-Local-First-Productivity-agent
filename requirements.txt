@@ -1,0 +1,21 @@
+# requirements.txt
+# Install all dependencies with: pip install -r requirements.txt
+
+# ── Agent ─────────────────────────────────────────────────────────────────────
+psutil          # process and system monitoring
+pynput          # keyboard and mouse listener for idle detection
+pywin32         # active window detection on Windows
+
+# ── Classifier ────────────────────────────────────────────────────────────────
+anthropic       # Claude API for AI classification fallback
+pyyaml          # load rules.yaml and settings.yaml
+
+# ── Processing ────────────────────────────────────────────────────────────────
+pandas          # session aggregation and weekly summaries
+
+# ── Dashboard ─────────────────────────────────────────────────────────────────
+streamlit       # local web dashboard
+plotly          # interactive charts
+
+# ── Exports ───────────────────────────────────────────────────────────────────
+reportlab       # PDF timesheet generation

@@ -1,0 +1,39 @@
+Model architecture - 
+
+main.py ── writes ──→ activity.db ←── reads ──  dashboard/app.py
+
+Local Productivity Agent
+│
+├── Collector        track active app + idle state
+├── Classifier       rule engine → AI fallback
+├── Database         SQLite — store sessions
+├── Processor        aggregate into daily summaries
+└── Output           dashboard + timesheet export
+
+File architecture
+
+productivity-agent/
+│
+├── main.py                  # start the agent
+│
+├── collector.py             # active window + idle detection
+├── classifier.py            # rules first, Claude API if unclear
+├── database.py              # SQLite read/write
+├── processor.py             # daily/weekly aggregation
+│
+├── dashboard/
+│   └── app.py               # Streamlit dashboard
+│
+├── exports/
+│   ├── csv_export.py        # timesheet as CSV
+│   └── pdf_export.py        # timesheet as PDF
+│
+├── config/
+│   ├── rules.yaml           # app → category rules
+│   └── settings.yaml        # idle threshold, poll interval
+│
+├── data/
+│   └── activity.db          # SQLite database file
+│
+├── requirements.txt
+└── README.md
