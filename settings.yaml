@@ -1,0 +1,20 @@
+# config/settings.yaml
+# Core settings for the productivity agent.
+# Edit these to match your preferences.
+
+agent:
+  poll_interval: 5          # how often to check active window (seconds)
+  idle_threshold: 300       # seconds of no input before marked as idle (5 mins)
+
+database:
+  path: data/activity.db    # local SQLite file location
+
+classifier:
+  use_ai: false              # set to false to disable Claude API fallback
+  ai_model: claude-sonnet-4-20250514
+
+exports:
+  output_dir: exports/output  # where CSV and PDF files are saved
+
+dashboard:
+  default_view: daily       # options: daily, weekly

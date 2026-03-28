@@ -1,0 +1,57 @@
+# config/rules.yaml
+
+Work:
+  - vscode
+  - code
+  - terminal
+  - iterm
+  - pycharm
+  - webstorm
+  - figma
+  - notion
+  - excel
+  - word
+  - powerpoint
+  - outlook
+  - jira
+  - github
+  - gitlab
+  - postman
+  - xcode
+
+Learning:
+  - udemy
+  - coursera
+  - stackoverflow
+  - medium
+  - docs
+  - documentation
+  - wikipedia
+  - leetcode
+  - tutorial
+  - course
+  - how to
+
+Communication:
+  - slack
+  - teams
+  - zoom
+  - meet
+  - gmail
+  - mail
+  - whatsapp
+  - telegram
+  - discord
+
+Distraction:
+  - youtube
+  - netflix
+  - instagram
+  - twitter
+  - facebook
+  - reddit
+  - tiktok
+  - twitch
+  - chess
+  - games
+  - reels
